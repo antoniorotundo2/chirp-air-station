@@ -1,0 +1,12 @@
+[submodule "cas-web-service"]
+	path = cas-web-service
+	url = https://github.com/antoniorotundo2/cas-web-service.git
+[submodule "cas-mqtt-service"]
+	path = cas-mqtt-service
+	url = https://github.com/antoniorotundo2/cas-mqtt-service.git
+[submodule "cas-sensor-gateway"]
+	path = cas-sensor-gateway
+	url = https://github.com/antoniorotundo2/cas-sensor-gateway.git
+[submodule "cas-sensor-lora"]
+	path = cas-sensor-lora
+	url = https://github.com/antoniorotundo2/cas-sensor-lora.git
