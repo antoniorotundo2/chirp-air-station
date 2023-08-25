@@ -1,0 +1,23 @@
+version: '3'
+services:
+    cas-mqtt-service:
+        build:
+            context: ./cas-mqtt-service
+            dockerfile: Dockerfile
+        image: cas-mqtt-service
+        depends_on:
+            - cas-database
+    cas-web-service:
+        build:
+            context: ./cas-web-service
+            dockerfile: Dockerfile
+        image: cas-web-service
+        depends_on:
+            - cas-database
+        ports:
+            - 80:8080
+    cas-database:
+        container_name: cas-db
+        image: mongo
+        ports:
+            - 27017:27017
